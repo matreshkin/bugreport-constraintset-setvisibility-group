@@ -14,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // This fixes the behaviour
+        // setContentView(R.layout.activity_main_workaround);
 
         ConstraintLayout parent = findViewById(R.id.parent);
         parent.setOnClickListener(v -> toggleVisibility(parent));
